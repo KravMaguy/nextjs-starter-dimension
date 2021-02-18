@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 import { FaCode } from "react-icons/fa";
 
 const People={
-    'header':'Some People',
-    'p':<a href='https://www.freecodecamp.org/news/how-i-changed-careers-and-landed-a-job-as-a-developer-in-six-months-d5cc5f7c19f6/'>Land a job as a developer in 6 months</a>
+    'header':'Is a team of software developers, digital marketers and designers',
+    'p': 'Hire us to build your web applications, devise your internet marketing plan, Manage your digital advertising, and craft custom buisness solutions using cutting edge technologies.'
 }
 const Abe={
     'header':'Abe',
-    'p':'has been developing for 3 years, yet to be interviewed'
+    'p':'Has been developing software professionally for 4 years'
 }
 const handleKeyPress=(e, callback)=>{
     if(e.key === 'Enter'){
@@ -34,11 +34,8 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Marketing, Design, Coding</h1>
-                <h2>{!props.draw?People['header']:Abe['header']}</h2>
-                {/* {props.draw?(<p>"People <a href="https://www.freecodecamp.org/news/how-i-changed-careers-and-landed-a-job-as-a-developer-in-six-months-d5cc5f7c19f6/">Land a job as a developer in 6 months</a>
-                from knowing only rudimentary things about JavaScript and CSS to landing a job as a front-end developer 
-              </p>):"H"} */}
-                <p>{!props.draw?People['p']:Abe['p']}</p>
+                <h2>{!props.draw&&!props.isArticleVisible?People['header']:Abe['header']}</h2>
+                <p>{!props.draw&&!props.isArticleVisible?People['p']:Abe['p']}</p>
             </div>
         </div>
         <nav>
