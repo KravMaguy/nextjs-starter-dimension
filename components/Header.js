@@ -7,7 +7,7 @@ const People={
 }
 const Abe={
     'header':'Abe',
-    'p':'Has been developing software professionally for 4 years'
+    'p':'Developing software professionally for 4 years'
 }
 const handleKeyPress=(e, callback)=>{
     if(e.key === 'Enter'){
