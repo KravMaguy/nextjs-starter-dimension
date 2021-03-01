@@ -1,4 +1,4 @@
-import { ToastContainer, toast, Zoom, cssTransition } from "react-toastify";
+import { ToastContainer, toast, Zoom, cssTransition, Bounce } from "react-toastify";
 import Select from "./Select";
 var TheNumber = require( 'awesome-phonenumber' );
 import PhoneNumber from "./Phone";
@@ -9,7 +9,7 @@ const validEmailRegex = RegExp(
 
 const bounce = cssTransition({
   enter: "animate__animated animate__rubberBand",
-  exit: "animate__animated animate__zoomOut",
+  exit: "animate__animated animate__bounceOutRight",
 });
 
 const successStyle = {
@@ -188,6 +188,12 @@ class MailForm extends React.Component {
     }));
   };
   reset = () => {
+    toast.dark(
+      `reset fields etc of reset`,
+      {autoClose:false, 
+      // position: toast.POSITION.BOTTOM_RIGHT,
+      }
+    );
     // console.log(this.state.currentStep, "the currentStep");
     // const { name, email, message } = this.state.values;
     let currentStep = this.state.currentStep;
@@ -406,7 +412,7 @@ class MailForm extends React.Component {
     const { fieldErrors } = this.state;
     return (
       <>
-        <ToastContainer transition={Zoom} />
+        <ToastContainer transition={bounce} />
         <div className="wizard_horizontal">
           <ul className="wizard_steps">
             <li>
@@ -674,13 +680,6 @@ function Step1(props) {
 }
 
 function Step2(props) {
-  // let fieldErrors = props.fieldErrors;
-  // let message = props.message;
-  // let values = props.values;
-  // let handleBlur = props.handleBlur;
-  // let handleChange = props.handleChange;
-  // let selectBoxError = props.selectBoxError
-  // let multiValue = props.multiValue
   let {
     multiValue,
     selectBoxError,

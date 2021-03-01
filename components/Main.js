@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 // import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram'
 // import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
 import { FiGithub, FiLink, FiFacebook } from "react-icons/fi";
-
+import Intro from "../pages/intro/intro.js";
 import MailForm from "./MailForm";
 class Main extends React.Component {
   render() {
@@ -38,76 +38,11 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: "flex" } : { display: "none" }}
       >
-        <article
-          id="intro"
-          className={`${this.props.article === "intro" ? "active" : ""} ${
-            this.props.articleTimeout ? "timeout" : ""
-          }`}
-          style={{ display: "none" }}
-        >
-          <h2 className="major">Intro</h2>
-          {/* <span className="image main">
-            <img src="/static/images/pic01.jpg" alt="" />
-          </span> */}
-          <p>
-            Abe is looking for a position with a software company where he will
-            be able to contribute to the success of the company by utilizing his
-            skills in javascript and web development. Ideally, the firm will
-            offer future growth opportunities. He has 3-4 years of experience in
-            the field of computer programming, digital marketing, and design.
-            His skills include but are not limited to.
-          </p>
-          <p>Web and Application development:</p>
-          <ul className="a">
-            <li>Javascript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>WAMP Stack</li>
-            <li>PHP, MySQL</li>
-            <li>API integration</li>
-            <li>Basic Git and Github</li>
-            <li>Progressive Web App</li>
-            <li>Geolocation</li>
-            <li>Basic Workflow Automation</li>
-          </ul>
-
-          <p>Engineering Principles:</p>
-          <ul className="a">
-            <li>Stacks</li>
-            <li>Queues</li>
-            <li>Binary Trees</li>
-            <li>Linked List</li>
-            <li>JS runtime and Event Loop</li>
-            <li>Closures</li>
-            <li>This &#38; Object prototypes</li>
-          </ul>
-
-          <p>Digital Marketing:</p>
-          <ul className="a">
-            <li>SEO</li>
-            <li>Paid Advertising (PPC Google and Bing Ads management)</li>
-            <li>Blogging</li>
-            <li>Search Engine Marketing</li>
-            <li>Social Media</li>
-          </ul>
-
-          <p>Design:</p>
-          <ul className="a">
-            <li>Adobe Creative Cloud</li>
-            <li>Logo Creation</li>
-            <li>SVG</li>
-            <li>CodePen Creative Animations</li>
-          </ul>
-
-          <p>
-            {" "}
-            {/* Some of his work is in private repositories but source code can be
-            made available upon request. */}
-          </p>
-
-          {close}
-        </article>
-
+        <Intro
+          article={this.props.article}
+          articleTimeout={this.props.articleTimeout}
+          close={close}
+        />
         <article
           id="work"
           className={`${this.props.article === "work" ? "active" : ""} ${
@@ -117,7 +52,10 @@ class Main extends React.Component {
         >
           <h2 className="major">Work</h2>
           <span className="image main">
-            <img src="/static/images/lease_warehouses.jpg" alt="Screenshot of a website for leasing and listing commercial warehouses" />
+            <img
+              src="/static/images/lease_warehouses.jpg"
+              alt="Screenshot of a website for leasing and listing commercial warehouses"
+            />
           </span>
           <h2>
             React and Firebase Progressive Web App, with IVR system scheduling,
@@ -130,7 +68,7 @@ class Main extends React.Component {
             <dd>React, Maps, Firebase, Twilio, Sendgrid, Paypal</dd>
             <dt>Categories</dt>
             <dd>Front End Development, Back End Development, Logo Design</dd>
-            <dt>Live Link</dt>
+            <dt>Link</dt>
             <dd>
               <a href="https://www.leasewarehouses.net" target="_blank">
                 Leasewarehouses.net
@@ -140,12 +78,11 @@ class Main extends React.Component {
             <dt>Buisness Solution</dt>
             <dd>
               <p>
-              A local real estate company that wanted a dynamic listing
-              platform, as well as scheduling and the ability to charge for
-              rental applications or issue coupons for free showings to
-              realtors.
+                A local real estate company that wanted a dynamic listing
+                platform, as well as scheduling and the ability to charge for
+                rental applications or issue coupons for free showings to
+                realtors.
               </p>
-
             </dd>
             <dt>Project Description</dt>
             <dd>
@@ -171,16 +108,27 @@ class Main extends React.Component {
                 for lease along with prompting the user to cancel or confirm the
                 meeting. If the customer entered a landline when the payment or
                 free form was filled out twilio API will utilize voice IVR to
-                complete the cancel/confirm appointment feature. The card component on the map also updates the data to show available spaces and calculates the rent.
+                complete the cancel/confirm appointment feature. The card
+                component on the map also updates the data to show available
+                spaces and calculates the rent.
               </p>
             </dd>
             <dt>Improvements</dt>
             <dd>
-              The problem with this app is that the Firebase/Create React App stack might not be the best. It does not implement SEO out of the box, it does not come with server side rendering. I implemented some of these features manually i.e. React-Helmet for SEO, and prerender.io. Firebase/React is a good enough stack for an internal company app, but something like Next.js is better for production apps.
+              The problem with this app is that the Firebase/Create React App
+              stack might not be the best. It does not implement SEO out of the
+              box, it does not come with server side rendering. I implemented
+              some of these features manually i.e. React-Helmet for SEO, and
+              prerender.io. Firebase/React is a good enough stack for an
+              internal company app, but something like Next.js is better for
+              production apps.
             </dd>
           </dl>
           <span className="image main">
-            <img src="/static/images/Mapbox3D.jpg" alt="Mapbox app screenshot" />
+            <img
+              src="/static/images/Mapbox3D.jpg"
+              alt="Mapbox app screenshot"
+            />
           </span>
           <h2>
             MapBox 3D Application with QGIS , geolocation of spaceplans on the
@@ -195,31 +143,49 @@ class Main extends React.Component {
             <dd>Front End Development</dd>
             <dt>Project Demo</dt>
             <dd>
-              <a href="https://www.youtube.com/watch?v=cl7o6uRBmAs" target="_blank">
+              <a
+                href="https://www.youtube.com/watch?v=cl7o6uRBmAs"
+                target="_blank"
+              >
                 Map Box App Demo
               </a>
             </dd>
             <dt>Buisness Solution</dt>
             <dd>
               <p>
-              Show Potential tenants a visual representation of a commercial warehouse. The company wanted a way to visually convey to potential tenants how a large warehouse was broken down into smaller units. And what the current build out looks like. They also wanted a way to integrate that with the current unit space plans.
+                Show Potential tenants a visual representation of a commercial
+                warehouse. The company wanted a way to visually convey to
+                potential tenants how a large warehouse was broken down into
+                smaller units. And what the current build out looks like. They
+                also wanted a way to integrate that with the current unit space
+                plans.
               </p>
-
             </dd>
             <dt>Project Description</dt>
             <dd>
               <p>
-                A Floor plan of the warehouse was located on the map using QGIS. Extrusions were drawn out in JSON using mapbox api and placed on top of the spaceplan. A fly to effect is applied when the building marker is clicked. Tooltips appear when an individual space is hovered and the space details update in the header. When a space is clicked on the map, an icon lights up in the footer and you can click to open a window displaying the spaceplan that was clicked as well as the streetview.
+                A Floor plan of the warehouse was located on the map using QGIS.
+                Extrusions were drawn out in JSON using mapbox api and placed on
+                top of the spaceplan. A fly to effect is applied when the
+                building marker is clicked. Tooltips appear when an individual
+                space is hovered and the space details update in the header.
+                When a space is clicked on the map, an icon lights up in the
+                footer and you can click to open a window displaying the
+                spaceplan that was clicked as well as the streetview.
               </p>
             </dd>
             <dt>Improvements</dt>
             <dd>
-              There was an issue with the 3d extrustions displaying properly on some apple phones that needs to be fixed before deployment.
+              There was an issue with the 3d extrustions displaying properly on
+              some apple phones that needs to be fixed before deployment.
             </dd>
           </dl>
 
           <span className="image main">
-            <img src="/static/images/codepen_demo_greensock.jpg" alt="Codepen.io demo of using greensock to turn on a lightbulb" />
+            <img
+              src="/static/images/codepen_demo_greensock.jpg"
+              alt="Codepen.io demo of using greensock to turn on a lightbulb"
+            />
           </span>
           <h2>
             Turn on the lights in a warehouse using GreenSock and codepen.
@@ -227,25 +193,35 @@ class Main extends React.Component {
           <dl>
             <dt>Tags</dt>
             <dd>Coding, Design</dd>
+
             <dt>Technologies</dt>
             <dd>Codepen.io, GSAP, Javascript Animation</dd>
+
             <dt>Categories</dt>
             <dd>Front End Development</dd>
+
             <dt>Live Link</dt>
             <dd>
               <a href="https://codepen.io/kravmaguy/pen/bPNaZJ" target="_blank">
                 Codepen Link
               </a>
             </dd>
+
             <dt>Project Description</dt>
             <dd>
               <p>
-                Creative coding exercise using GSAP (greensock animation platform), and SVG. Check out the logo animation intro and the lightbulb flickering, and overall lighting effects in the warehouse.
+                Creative coding exercise using GSAP (greensock animation
+                platform), and SVG. Check out the logo animation intro and the
+                lightbulb flickering, and overall lighting effects in the
+                warehouse.
               </p>
             </dd>
             <dt>Improvements</dt>
             <dd>
-              Maybe adjust the timing of the flickering, refactor the code. Overall it looks like a scary movie, and the dusty warehouse adds to the effect. Perhaps add a mouse scuffling across the floor for humor. 
+              Maybe adjust the timing of the flickering, refactor the code.
+              Overall it looks like a scary movie, and the dusty warehouse adds
+              to the effect. Perhaps add a mouse scuffling across the floor for
+              humor.
             </dd>
           </dl>
 
