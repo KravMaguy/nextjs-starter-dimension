@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 // import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram'
 // import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
 import { FiGithub, FiLink, FiFacebook } from "react-icons/fi";
-import Intro from "../pages/intro/intro.js";
+import Intro from "../pages/intro.js";
 import MailForm from "./MailForm";
 class Main extends React.Component {
   render() {
