@@ -65,24 +65,31 @@ const Header = (props) => (
           </Link>
         </li>
         <li>
-          <a
+          {/* <a
             href="#"
             onClick={() => {
               props.onOpenArticle("work");
             }}
           >
             Work
-          </a>
+          </a> */}
+          <Link href="/work">
+            <a>Work</a>
+          </Link>
         </li>
         <li>
-          <a
+          {/* <a
             href="#"
             onClick={() => {
               props.onOpenArticle("about");
             }}
           >
             About
-          </a>
+          </a> */}
+
+          <Link href="/about">
+            <a>About</a>
+          </Link>
         </li>
         <li>
           <a

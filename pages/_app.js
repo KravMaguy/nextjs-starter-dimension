@@ -97,8 +97,9 @@ class IndexPage extends React.Component {
     }, 350);
   }
   eventHandler = (url) => {
+    url = url.slice(1);
     console.log(url, "the url");
-    this.handleOpenArticle("intro");
+    this.handleOpenArticle(url);
   };
 
   componentDidUpdate(prevProps) {
