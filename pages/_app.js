@@ -78,6 +78,7 @@ class IndexPage extends React.Component {
   handleCloseArticle() {
     console.log("handle close= ");
     console.log(this.props, "the props");
+    this.props.router.push("/");
     this.draw();
     this.setState({
       articleTimeout: !this.state.articleTimeout,
@@ -102,8 +103,10 @@ class IndexPage extends React.Component {
     this.handleOpenArticle(url);
   };
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps, nextprops) {
     // const { pathname, query } = this.props.router;
+    console.log(prevProps.router.route, "prevProps"),
+      console.log(nextprops, "nextprops");
     this.props.router.events.on("routeChangeComplete", this.eventHandler);
     // if (query.counter !== prevProps.router.query.counter) {
     //   // fetch data based on the new query
