@@ -1,20 +1,27 @@
-import stylesheet from "styles/main.scss";
-import Head from "next/head";
-
+// import { useRouter } from "next/router";
+// import { useEffect } from "react";
 export default function Intro(props) {
+  // const router = useRouter();
+  // console.log(router);
+  // useEffect(() => {
+  //   console.log("useeffect", router);
+  //   const handleRouteChangeError = (err, url) => {
+  //     if (err.cancelled) {
+  //       console.log(`Route to ${url} was cancelled!`);
+  //     }
+  //   };
+
+  // router.events.on("routeChangeError", handleRouteChangeError);
+
+  // If the component is unmounted, unsubscribe
+  // from the event with the `off` method:
+  //   return () => {
+  //     router.events.off("routeChangeError", handleRouteChangeError);
+  //   };
+  // }, []);
+
   return (
     <>
-      <Head>
-        <title>Introduction</title>
-        <link
-          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i"
-          rel="stylesheet"
-        />
-
-        {/* <FaViconfile/> */}
-      </Head>
-      <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-
       <article
         id="intro"
         className={`${props.article === "intro" ? "active" : ""} ${

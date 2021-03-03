@@ -56,9 +56,10 @@ const Header = (props) => (
         <li>
           <Link
             href="/intro"
-            onClick={() => {
-              props.onOpenArticle("intro");
-            }}
+            // onClick={() => {
+            //   // props.onOpenArticle("intro");
+            //   console.log("intro");
+            // }}
           >
             <a>Intro</a>
           </Link>

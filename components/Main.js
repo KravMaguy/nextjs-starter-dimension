@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 // import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram'
 // import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
 import { FiGithub, FiLink, FiFacebook } from "react-icons/fi";
+import Link from "next/link";
+
 import Intro from "../pages/intro.js";
 import MailForm from "./MailForm";
 class Main extends React.Component {
@@ -30,7 +32,11 @@ class Main extends React.Component {
         onClick={() => {
           closeHandler();
         }}
-      ></div>
+      >
+        <Link href="http://localhost:3000/">
+          <a></a>
+        </Link>
+      </div>
     );
 
     return (

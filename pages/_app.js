@@ -1,3 +1,4 @@
+import { withRouter } from "next/router";
 import Head from "next/head";
 import stylesheet from "styles/main.scss";
 // import "../static/css/avatar.css";
@@ -5,13 +6,12 @@ import Icon from "../components/SVG-Jobless";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
-import ProfileImage from "../components/Profile-Image"
-import FaViconfile from "../components/FaViconfile"
+import ProfileImage from "../components/Profile-Image";
+import FaViconfile from "../components/FaViconfile";
 // import "../static/css/avatar.css";
 
-
 class IndexPage extends React.Component {
-  constructor(props) {
+  constructor(props, router) {
     super(props);
     this.state = {
       isArticleVisible: false,
@@ -22,6 +22,7 @@ class IndexPage extends React.Component {
       isDrawing: false,
       FormIsOpen: false,
     };
+
     this.handleOpenArticle = this.handleOpenArticle.bind(this);
     this.handleCloseArticle = this.handleCloseArticle.bind(this);
   }
@@ -44,15 +45,18 @@ class IndexPage extends React.Component {
     }
   }
 
-  formCloser=()=>{
-    this.setState({FormIsOpen:false})
-  }
+  formCloser = () => {
+    this.setState({ FormIsOpen: false });
+  };
 
   handleOpenArticle(article) {
-    if(article==='contact'){
-      this.setState({FormIsOpen:true})
+    console.log("handle open article= ", article);
+    if (article === "contact") {
+      this.setState({ FormIsOpen: true });
     }
-    if(this.state.isDrawing){this.draw()}
+    if (this.state.isDrawing) {
+      this.draw();
+    }
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
       article,
@@ -72,7 +76,9 @@ class IndexPage extends React.Component {
   }
 
   handleCloseArticle() {
-    this.draw()
+    console.log("handle close= ");
+    console.log(this.props, "the props");
+    this.draw();
     this.setState({
       articleTimeout: !this.state.articleTimeout,
     });
@@ -90,6 +96,21 @@ class IndexPage extends React.Component {
       });
     }, 350);
   }
+  eventHandler = (url) => {
+    console.log(url, "the url");
+    this.handleOpenArticle("intro");
+  };
+
+  componentDidUpdate(prevProps) {
+    // const { pathname, query } = this.props.router;
+    this.props.router.events.on("routeChangeComplete", this.eventHandler);
+    // if (query.counter !== prevProps.router.query.counter) {
+    //   // fetch data based on the new query
+    // }
+    // if (pathname !== prevProps.router.pathname) {
+    //   console.log(pathname);
+    // }
+  }
 
   render() {
     return (
@@ -106,7 +127,7 @@ class IndexPage extends React.Component {
               rel="stylesheet"
             />
 
-         <FaViconfile/>
+            <FaViconfile />
           </Head>
 
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
@@ -143,4 +164,4 @@ class IndexPage extends React.Component {
   }
 }
 
-export default IndexPage;
+export default withRouter(IndexPage);
