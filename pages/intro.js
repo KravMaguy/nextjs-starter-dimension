@@ -9,12 +9,7 @@ export default function Intro(props) {
       }`}
       style={{ display: "none" }}
     >
-      <Link href="/posts/first-post">
-        <h2 className="major">
-          {" "}
-          <a>Intro</a>
-        </h2>
-      </Link>
+      <h2 className="major">intro</h2>
 
       {/* <span className="image main">
           <img src="/static/images/pic01.jpg" alt="" />
