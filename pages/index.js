@@ -4,7 +4,7 @@ import stylesheet from "styles/main.scss";
 // import "../static/css/avatar.css";
 import Icon from "../components/SVG-Jobless";
 import Header from "../components/Header";
-import Main from "../components/Main";
+import Main from "./main";
 import Footer from "../components/Footer";
 import ProfileImage from "../components/Profile-Image";
 import FaViconfile from "../components/FaViconfile";
