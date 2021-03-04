@@ -1,6 +1,12 @@
 import "../styles/main.scss";
+import { AppWrapper } from "../context/state"; // import based on where you put it
 
-// This default export is required in a new `pages/_app.js` file.
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function Application({ Component, pageProps }) {
+  return (
+    <AppWrapper>
+      <Component {...pageProps} />
+    </AppWrapper>
+  );
 }
+
+export default Application;

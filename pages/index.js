@@ -105,8 +105,8 @@ class IndexPage extends React.Component {
 
   componentDidUpdate(prevProps, nextprops) {
     // const { pathname, query } = this.props.router;
-    console.log(prevProps.router.route, "prevProps"),
-      console.log(nextprops, "nextprops");
+    // console.log(prevProps.router.route, "prevProps"),
+    // console.log(nextprops, "nextprops");
     this.props.router.events.on("routeChangeComplete", this.eventHandler);
     // if (query.counter !== prevProps.router.query.counter) {
     //   // fetch data based on the new query
