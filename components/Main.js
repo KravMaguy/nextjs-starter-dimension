@@ -866,6 +866,10 @@ class Main extends React.Component {
                 Practice Data Structures - Repository
               </a>
             </li>
+            <li>
+             
+              B.A. Middle Eastern Languages and Linguistics 
+            </li>
           </ul>
 
           {close}
