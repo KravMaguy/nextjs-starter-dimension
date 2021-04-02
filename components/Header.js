@@ -7,7 +7,7 @@ const People={
 }
 const Abe={
     'header':'Abe',
-    'p':'Developing software professionally for 4 years'
+    'p':'Professional Software Development'
 }
 const handleKeyPress=(e, callback)=>{
     if(e.key === 'Enter'){
@@ -43,6 +43,7 @@ const Header = (props) => (
                 <li><a href="#" onClick={() => { props.onOpenArticle('intro') }}>Intro</a></li>
                 <li><a href="#" onClick={() => { props.onOpenArticle('work') }}>Work</a></li>
                 <li><a href="#" onClick={() => { props.onOpenArticle('about') }}>About</a></li>
+                <li><a href="#" onClick={() => { props.onOpenArticle('certifications') }}>Certifications</a></li>
                 <li><a href="#" onClick={() => { props.onOpenArticle('contact') }}>Contact</a></li>
             </ul>
         </nav>

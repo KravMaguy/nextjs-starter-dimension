@@ -74,7 +74,12 @@ class Main extends React.Component {
                 Leasewarehouses.net
               </a>
             </dd>
-
+            <dt>Medium.com Article</dt>
+            <dd>
+              <a href="https://medium.com/p/ba37b386f3e8/edit" target="_blank">
+                Article on progressive web apps
+              </a>
+            </dd>
             <dt>Buisness Solution</dt>
             <dd>
               <p>
@@ -175,6 +180,10 @@ class Main extends React.Component {
                   through the User Dashboard
                 </li>
                 <li>
+                  An interested potential tenant can send out an email to the
+                  listing agent through the application
+                </li>
+                <li>
                   A user can Create, Read, Update and delete units belonging to
                   individual buidlings through the User Dashboard
                 </li>
@@ -229,6 +238,45 @@ class Main extends React.Component {
               convert existing procedural php code to object oriented php.
               Remove unused css. Run Webpack. Remove and consolidate repeated
               code.
+            </dd>
+          </dl>
+
+          <span className="image main">
+            <img
+              src="/static/images/multistep_form.jpg"
+              alt="Screenshot of a multistep form built in React.js"
+            />
+          </span>
+          <h2>Multi Step form built in React.js</h2>
+          <dl>
+            <dt>Tags</dt>
+            <dd>Coding and Design</dd>
+            <dt>Technologies</dt>
+            <dd>React.js, React Select, Express.Js, Next.js</dd>
+            <dt>Categories</dt>
+            <dd>Front End Development, Back End Development, Design</dd>
+            <dt>Description</dt>
+            <dd>
+              <p>
+                Multi Step Form incorporated into a portfolio project. Features
+                css animations, React Select, React Phone Input, React Credit
+                Cards.
+              </p>
+            </dd>
+            <dt>Live Link</dt>
+            <dd>
+              <p>
+                Multi Step form in react with css animations, form validation,
+                and custom effects, check out the credit card animation in the
+                payment form at the last step. To use go back to the homepage of
+                this site, select the 'contact option' and start filling out the
+                form.
+              </p>
+            </dd>
+            <dt>Improvements</dt>
+            <dd>
+              Further extract components, Update from Class based components to
+              use hooks. original repo this website is based off of is outdated.
             </dd>
           </dl>
 
@@ -290,6 +338,228 @@ class Main extends React.Component {
                 <li>A user can login using social login or email/password</li>
                 <li>A user can create read update and delete his todos</li>
               </ul>
+            </dd>
+          </dl>
+
+          <span className="image main">
+            <img
+              src="/static/images/ACF_Map_plugin.jpg"
+              alt="Screenshot of the Advanced custom fields map plugin developed for a chicago based construction company"
+            />
+          </span>
+          <h2>
+            A wordpress plugin i developed for a buisness to list their jobs
+            completed as a custom post type on a map, takes a 'city' parameter
+            from a shortcode.
+          </h2>
+          <dl>
+            <dt>Tags</dt>
+            <dd>Coding</dd>
+            <dt>Technologies</dt>
+            <dd>PHP, Wordpress, Advanced Custom Fields, Plugin Development</dd>
+            <dt>Categories</dt>
+            <dd>
+              Front End Development, Back End Development, Full Stack
+              Development
+            </dd>
+            <dt>Live Link</dt>
+            <dd>
+              <a href="https://www.srsexteriors.com" target="_blank">
+                Map as shown being used on the homepage of a website
+              </a>
+            </dd>
+            <dt>Repository</dt>
+            <dd>
+              <a
+                href="https://github.com/KravMaguy/acf-custom-plugin"
+                target="_blank"
+              >
+                Wordpress Map Plugin
+              </a>
+            </dd>
+
+            <dt>Buisness Solution</dt>
+            <dd>
+              <p>
+                Exterior Remodeling and construction company will be able to
+                easily add custom post 'Job' types to their map, they will be
+                able to add a map to any page in the 'service area' category and
+                specify which jobs to be shown on the map by passing a 'city'
+                parameter as a shortcode.
+              </p>
+            </dd>
+            <dt>The Plugin fulfills the following user stories:</dt>
+            <dd>
+              <ul>
+                <li>
+                  A signed in wordpress user can add the map plugin as a
+                  shortcode to any page through the wordpress editor or through
+                  a page builder i.e. Elementor
+                </li>
+                <li>
+                  You can pass the shortcode a city parameter and the map shown
+                  will display all the custom post type 'Jobs' completed in that
+                  city
+                </li>
+                <li>
+                  If a city is not passed as parameter the map will default to
+                  show all Jobs
+                </li>
+                <li>Plugin will show jobs created through custom post types</li>
+                <li>
+                  A user can click on a map icon and have an option to be taken
+                  to the custom post associated with that location
+                </li>
+                <li>
+                  Plugin will display the number of jobs completed to the user
+                </li>
+              </ul>
+            </dd>
+            <dt>Improvements</dt>
+            <dd>
+              Plugin gets all the Jobs custom posts and then only afterwards
+              does all of the filtering relative to the parameter passed to the
+              shortcode. It may be better to initially retrieve from the
+              database all the Jobs that are of a particular city i.e. SQL WHERE
+              Query
+            </dd>
+          </dl>
+
+          <span className="image main">
+            <img
+              src="/static/images/pokedex.jpg"
+              alt="Screenshot of a pokemon application using pokemon api"
+            />
+          </span>
+          <h2>Pokemon application built in Next.js deployed on Vercel</h2>
+          <dl>
+            <dt>Tags</dt>
+            <dd>Coding</dd>
+            <dt>Technologies</dt>
+            <dd>React.js, Next.js, API integration</dd>
+            <dt>Categories</dt>
+            <dd>Full Stack Development</dd>
+            <dt>Live Project Link</dt>
+            <dd>
+              <a
+                href="https://learn-nextjs-p-git-fork-kravmaguy-shallow-route-ya-d1de04.vercel.app/?page=0"
+                target="_blank"
+              >
+                Next.Js Pokemon application deployed on Vercel
+              </a>
+            </dd>
+            <dt>Project Repository</dt>
+            <dd>
+              <a
+                href="https://github.com/KravMaguy/learn-nextjs-pokemon-exp"
+                target="_blank"
+              >
+                Pokemon Github Repository
+              </a>
+            </dd>
+            <dt>Purpose</dt>
+            <dd>
+              <p>Learn to use Next.js</p>
+            </dd>
+          </dl>
+
+          <span className="image main">
+            <img
+              src="/static/images/srs_old.jpg"
+              alt="Screenshot of the old website for srs exteriors"
+            />
+          </span>
+          <h2>
+            Reverse engineer a 70+ page website built in ASP .NET framework
+            within a one week time crunch
+          </h2>
+          <dl>
+            <dt>Tags</dt>
+            <dd>Coding</dd>
+            <dt>Technologies</dt>
+            <dd>PHP, Javascript</dd>
+            <dt>Categories</dt>
+            <dd>Front End Development, Back End Development</dd>
+            <dt>Buisness solution</dt>
+            <dd>
+              <p>
+                A chicago based company did not want to continue paying their
+                monthly 700$ fee to spectrum time warner. They had the rights to
+                all the content of the site but did not have access to the
+                backend. I copied the front end of the website unminified the js
+                code and rewrote all the ajax calls to make sure their 100+ "get
+                a free quote" forms would still work. A week later I was tasked
+                with converting the reverse engineered website into a wordpress
+                website with very similar styling to the original site.
+              </p>
+            </dd>
+
+            <dt>Live Link to copied website</dt>
+            <dd>
+              <a href="https://srsexteriors.com/old/" target="_blank">
+                https://srsexteriors.com/old/
+              </a>
+            </dd>
+            <dt>Improvements</dt>
+            <dd>
+              Since this website is no longer being used and has been converted
+              to wordpress, no improvements are necessary. For the new wordpress
+              website the following improvements could be made:
+              <ul>
+                <li>
+                  replace all canned content and photos with original content
+                </li>
+                <li>
+                  add valuable and informative content in the form of custom
+                  posts for desired rankings in the particular niche
+                </li>
+                <li>
+                  Increase page speed by optimizing images, reduce the number of
+                  3rd party plugins being used, or program the functionality
+                  organically. Use Lighthouse extension for chrome to benchmark
+                  speed and make improvements over time.
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <span className="image main">
+            <img
+              src="/static/images/Elementor_widget.gif"
+              alt="Screenshot of the elementor custom buttons plugin and links widget developed for a chicago based construction company"
+            />
+          </span>
+          <h2>
+            Elementor buttons creation widget for Elementor page builder using
+            repeater fields, allows a user to create buttons and link to
+            existing pages
+          </h2>
+          <dl>
+            <dt>Tags</dt>
+            <dd>Coding</dd>
+            <dt>Technologies</dt>
+            <dd>PHP, Wordpress, Elementor Development</dd>
+            <dt>Categories</dt>
+            <dd>PHP development, Elementor Development, Wordpress</dd>
+            <dt>Repository</dt>
+            <dd>
+              <a
+                href="https://github.com/KravMaguy/custom-elementor-widgets"
+                target="_blank"
+              >
+                Custom Elementor Widget
+              </a>
+            </dd>
+
+            <dt>Buisness Solution</dt>
+            <dd>
+              <p>
+                Chicago based Exterior Remodeling and construction company will
+                be able to easily add button links directly through their
+                wordpress page builder without having to deal with html and css,
+                button links will mimic the styling of the buttons as seen on
+                their old website.
+              </p>
             </dd>
           </dl>
 
@@ -402,49 +672,6 @@ class Main extends React.Component {
 
           <span className="image main">
             <img
-              src="/static/images/codepen_demo_greensock.jpg"
-              alt="Codepen.io demo of using greensock to turn on a lightbulb"
-            />
-          </span>
-          <h2>
-            Turn on the lights in a warehouse using GreenSock and codepen.
-          </h2>
-          <dl>
-            <dt>Tags</dt>
-            <dd>Coding, Design</dd>
-
-            <dt>Technologies</dt>
-            <dd>Codepen.io, GSAP, Javascript Animation</dd>
-
-            <dt>Categories</dt>
-            <dd>Front End Development</dd>
-
-            <dt>Live Link</dt>
-            <dd>
-              <a href="https://codepen.io/kravmaguy/pen/bPNaZJ" target="_blank">
-                Codepen Link
-              </a>
-            </dd>
-
-            <dt>Project Description</dt>
-            <dd>
-              <p>
-                Creative coding exercise using GSAP (greensock animation
-                platform), and SVG. Check out the logo animation intro and the
-                lightbulb flickering, and overall lighting effects in the
-                warehouse.
-              </p>
-            </dd>
-            <dt>Improvements</dt>
-            <dd>
-              Perhaps adjust the timing of the flickering, refactor the code.
-              Overall it looks like a scary movie, and the dusty warehouse adds
-              to the effect. Add a mouse scuffling across the floor for humor.
-            </dd>
-          </dl>
-
-          <span className="image main">
-            <img
               src="/static/images/3d-floorplan.jpg"
               alt="3D floor plans buisness directory"
             />
@@ -492,6 +719,100 @@ class Main extends React.Component {
             </dd>
           </dl>
 
+          <span className="image main">
+            <img
+              src="/static/images/codepen_demo_greensock.jpg"
+              alt="Codepen.io demo of using greensock to turn on a lightbulb"
+            />
+          </span>
+          <h2>
+            Turn on the lights in a warehouse using GreenSock and codepen.
+          </h2>
+          <dl>
+            <dt>Tags</dt>
+            <dd>Coding, Design</dd>
+
+            <dt>Technologies</dt>
+            <dd>Codepen.io, GSAP, Javascript Animation</dd>
+
+            <dt>Categories</dt>
+            <dd>Front End Development</dd>
+
+            <dt>Live Link</dt>
+            <dd>
+              <a href="https://codepen.io/kravmaguy/pen/bPNaZJ" target="_blank">
+                Codepen Link
+              </a>
+            </dd>
+
+            <dt>Project Description</dt>
+            <dd>
+              <p>
+                Creative coding exercise using GSAP (greensock animation
+                platform), and SVG. Check out the logo animation intro and the
+                lightbulb flickering, and overall lighting effects in the
+                warehouse.
+              </p>
+            </dd>
+            <dt>Improvements</dt>
+            <dd>
+              Perhaps adjust the timing of the flickering, refactor the code.
+              Overall it looks like a scary movie, and the dusty warehouse adds
+              to the effect. Add a mouse scuffling across the floor for humor.
+            </dd>
+          </dl>
+
+          <span className="image main">
+            <img
+              src="/static/images/ashis.jpg"
+              alt="Codepen.io demo of a landing page with SVG effects"
+            />
+          </span>
+          <h2>
+            Landing page for a web designer built on the codepen platform
+            featuring SVG effects, best viewed on Chrome Desktop
+          </h2>
+          <dl>
+            <dt>Tags</dt>
+            <dd>Coding, Design</dd>
+
+            <dt>Technologies</dt>
+            <dd>Codepen.io, GSAP, SVG, Javascript Animation</dd>
+
+            <dt>Categories</dt>
+            <dd>Front End Development</dd>
+
+            <dt>Live Link</dt>
+            <dd>
+              <a href="https://codepen.io/kravmaguy/pen/xBqbjE" target="_blank">
+                Codepen Project Link
+              </a>
+            </dd>
+
+            <dt>Project Inspiration</dt>
+            <dd>
+              <a
+                href="https://tympanus.net/codrops/2017/10/17/dynamic-shape-overlays-with-svg/"
+                target="_blank"
+              >
+                Tympanus SVG overlay effects article Codrops
+              </a>
+            </dd>
+
+            <dt>Project Description</dt>
+            <dd>
+              <p>
+                Creative coding exercise using GSAP (greensock animation
+                platform), and SVG. Landing page prototype that was built for a
+                web designer, press the hamburger menu icon to see the overlay
+                effects, move the mouse around various parts of the page to see
+                the lighting effects in the background behind the designer's
+                name, and hover over the designer on the main page for bubble
+                effects.
+              </p>
+            </dd>
+          </dl>
+
           {close}
         </article>
 
@@ -507,6 +828,46 @@ class Main extends React.Component {
             Abe enjoys studying foreign languages, travel, and teaching martial
             arts.
           </p>
+          {close}
+        </article>
+
+        <article
+          id="certifications"
+          className={`${
+            this.props.article === "certifications" ? "active" : ""
+          } ${this.props.articleTimeout ? "timeout" : ""}`}
+          style={{ display: "none" }}
+        >
+          <h2 className="major">Certifications</h2>
+          <h3>Certifications and Study</h3>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.freecodecamp.org/certification/marketingdesigncoding/javascript-algorithms-and-data-structures"
+                target="_blank"
+              >
+                Data Structures and Algorithms - Free Code Camp
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.freecodecamp.org/certification/marketingdesigncoding/apis-and-microservices"
+                target="_blank"
+              >
+                Api's And MicroServices - Free Code Camp
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/KravMaguy/Technical-interview"
+                target="_blank"
+              >
+                Practice Data Structures - Repository
+              </a>
+            </li>
+          </ul>
+
           {close}
         </article>
 
