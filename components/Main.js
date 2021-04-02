@@ -813,6 +813,62 @@ class Main extends React.Component {
             </dd>
           </dl>
 
+
+
+
+
+
+
+          <span className="image main">
+            <img
+              src="/static/images/warehouse_promo.jpg"
+              alt="Real Estate Leasing Animation Promo"
+            />
+          </span>
+          <h2>
+            Promo Logo Animation for a Real Estate Company
+          </h2>
+          <dl>
+            <dt>Tags</dt>
+            <dd>Coding, Design</dd>
+
+            <dt>Technologies</dt>
+            <dd>Codepen.io, Animations</dd>
+
+            <dt>Categories</dt>
+            <dd>Front End Development</dd>
+
+            <dt>Live Link</dt>
+            <dd>
+              <a href="http://greatofficespaces.net/ads/promo_8111.html" target="_blank">
+                Real Estate Promo Animation
+              </a>
+            </dd>
+
+            <dt>Project Inspiration</dt>
+            <dd>
+              <a
+                href="https://www.youtube.com/watch?v=smBP4muoLYA&ab_channel=DevTips"
+                target="_blank"
+              >
+                Dev Tips Logo Animation Tutorial
+              </a>
+            </dd>
+
+            <dt>Project Description</dt>
+            <dd>
+              <p>
+                Creative coding exercise using CSS animations Logo intro and forwards to a Wordpress Landing Page.
+              </p>
+            </dd>
+          </dl>
+
+
+
+
+
+
+
           {close}
         </article>
 
