@@ -11,16 +11,10 @@ export default function Intro(props) {
     >
       <h2 className="major">intro</h2>
 
-      {/* <span className="image main">
-          <img src="/static/images/pic01.jpg" alt="" />
-        </span> */}
       <p>
-        Abe is looking for a position with a software company where he will be
-        able to contribute to the success of the company by utilizing his skills
-        in javascript and web development. Ideally, the firm will offer future
-        growth opportunities. He has 3-4 years of experience in the field of
-        computer programming, digital marketing, and design. His skills include
-        but are not limited to.
+        Hi! hire me to work for your company, I have experience in React.js, Firebase, Express, PHP, MySQL, as well as building custom sites and plugins in Wordpress and Elementor.
+        I will not rest until I squash all your software bugs, and fully optimize your codebase! I literally loose sleep at night when software is not working properly. In my freetime I enjoy thinking about ways to write more efficient algorithms, so you can definitely count on me to get the job done!
+        I have built large custom fullstack applications in React and Express as well as in PHP Mysql that implement Geolocation, IVR systems and SMS messaging, Progressive web apps, Payment integrations, and Workflow automations. I probably have more experience than your average bootcamp graduate or college undergraduate, so give me a chance to show you what I can do for your company!
       </p>
       <p>Web and Application development:</p>
       <ul className="a">
@@ -29,39 +23,35 @@ export default function Intro(props) {
         <li>Node.js</li>
         <li>WAMP Stack</li>
         <li>PHP, MySQL</li>
-        <li>API integration</li>
+        <li>API integrations</li>
         <li>Basic Git and Github</li>
         <li>Progressive Web App</li>
         <li>Geolocation</li>
-        <li>Basic Workflow Automation</li>
+        <li>Workflow Automation</li>
+        <li>Custom Wordpress and Plugin Development</li>
+
+      </ul>
+
+      <p>Foreign Languages:</p>
+      <ul className="a">
+        <li>English</li>
+        <li>Spanish</li>
+        <li>Hebrew</li>
+        <li>Arabic</li>
+        <li>French</li>
+        <li>Portuguese</li>
+        <li>Russian</li>
+        <li>Persian</li>
+
+
+
+
       </ul>
 
       <p>Engineering Principles:</p>
       <ul className="a">
-        <li>Stacks</li>
-        <li>Queues</li>
-        <li>Binary Trees</li>
-        <li>Linked List</li>
-        <li>JS runtime and Event Loop</li>
-        <li>Closures</li>
-        <li>This &#38; Object prototypes</li>
-      </ul>
-
-      <p>Digital Marketing:</p>
-      <ul className="a">
-        <li>SEO</li>
-        <li>Paid Advertising (PPC Google and Bing Ads management)</li>
-        <li>Blogging</li>
-        <li>Search Engine Marketing</li>
-        <li>Social Media</li>
-      </ul>
-
-      <p>Design:</p>
-      <ul className="a">
-        <li>Adobe Creative Cloud</li>
-        <li>Logo Creation</li>
-        <li>SVG</li>
-        <li>CodePen Creative Animations</li>
+        <li>OOP</li>
+        <li>Functional Programming</li>
       </ul>
 
       <p>

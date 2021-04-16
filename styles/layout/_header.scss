@@ -348,5 +348,7 @@ $spotThree: #352155;
 }
 
 #header nav ul li a {
-  font-weight: 600;
+  font-weight: 900;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: white;
 }

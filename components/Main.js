@@ -4,7 +4,10 @@ import PropTypes from "prop-types";
 // import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebook'
 // import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram'
 // import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
-import { FiGithub, FiLink, FiFacebook } from "react-icons/fi";
+import { FiGithub} from "react-icons/fi";
+import { SiCodewars, SiFreecodecamp
+} from "react-icons/si";
+
 import Intro from "../pages/intro.js";
 import MailForm from "./MailForm";
 class Main extends React.Component {
@@ -120,8 +123,8 @@ class Main extends React.Component {
             </dd>
             <dt>Improvements</dt>
             <dd>
-              The problem with this app is that the Firebase/Create React App
-              stack might not be the best. It does not implement SEO out of the
+              Firebase/Create React App
+              stack might not be the best stack for implementing SEO out of the
               box, it does not come with server side rendering. I implemented
               some of these features manually i.e. React-Helmet for SEO, and
               prerender.io. Firebase/React is a good enough stack for an
@@ -217,7 +220,7 @@ class Main extends React.Component {
                 <li>I can get directions to any listed building</li>
                 <li>
                   No one outside of the app sponsor can list any buildings
-                  within 5 miles of the main buisness location
+                  within 5 miles of the main business location
                 </li>
                 <li>
                   A superAdmin has the ability to delete a user and all his
@@ -348,7 +351,7 @@ class Main extends React.Component {
             />
           </span>
           <h2>
-            A wordpress plugin i developed for a buisness to list their jobs
+            A wordpress plugin i developed for a business to list their jobs
             completed as a custom post type on a map, takes a 'city' parameter
             from a shortcode.
           </h2>
@@ -673,10 +676,10 @@ class Main extends React.Component {
           <span className="image main">
             <img
               src="/static/images/3d-floorplan.jpg"
-              alt="3D floor plans buisness directory"
+              alt="3D floor plans business directory"
             />
           </span>
-          <h2>3D floor plans buisness directory.</h2>
+          <h2>3D floor plans business directory.</h2>
           <dl>
             <dt>Tags</dt>
             <dd>Coding, Design</dd>
@@ -693,7 +696,7 @@ class Main extends React.Component {
                 href="https://www.greatofficespaces.net/office-warehouse-for-lease/"
                 target="_blank"
               >
-                3D Floor plans of spaces and buisnesses in a commercial building
+                3D Floor plans of spaces and businesses in a commercial building
               </a>
             </dd>
             <dt>Original Article</dt>
@@ -710,7 +713,7 @@ class Main extends React.Component {
             <dd>
               <p>
                 Display an office building lay out in the form of a 3D map, and
-                layered Spaceplans, a user can search for a buisness in the
+                layered Spaceplans, a user can search for a business in the
                 building using the search form at the top. As well as go through
                 the different levels of the building for a visual
                 interpretation. Click anywhere on the intro screen to skip the
@@ -895,12 +898,12 @@ class Main extends React.Component {
           style={{ display: "none" }}
         >
           <h2 className="major">Certifications</h2>
-          <h3>Certifications and Study</h3>
+          <h3>Certifications and Education</h3>
 
           <ul>
             <li>
               <a
-                href="https://www.freecodecamp.org/certification/marketingdesigncoding/javascript-algorithms-and-data-structures"
+                href="https://www.freecodecamp.org/certification/kravmaguy/javascript-algorithms-and-data-structures"
                 target="_blank"
               >
                 Data Structures and Algorithms - Free Code Camp
@@ -908,18 +911,10 @@ class Main extends React.Component {
             </li>
             <li>
               <a
-                href="https://www.freecodecamp.org/certification/marketingdesigncoding/apis-and-microservices"
+                href="https://www.freecodecamp.org/certification/kravmaguy/apis-and-microservices"
                 target="_blank"
               >
                 Api's And MicroServices - Free Code Camp
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/KravMaguy/Technical-interview"
-                target="_blank"
-              >
-                Practice Data Structures - Repository
               </a>
             </li>
             <li>
@@ -941,20 +936,21 @@ class Main extends React.Component {
           <h2 className="major">Contact</h2>
           <MailForm FormIsOpen={this.props.FormIsOpen} />
           <ul className="icons">
+
             <li>
-              <a href="#" className="social">
+              <a href="https://www.codewars.com/users/abe%20s" className="social">
                 {" "}
-                <FiFacebook />
+                <SiCodewars />
               </a>
             </li>
             <li>
-              <a href="#" className="social">
+              <a href="https://www.freecodecamp.org/kravmaguy" className="social">
                 {" "}
-                <FiLink />
+                <SiFreecodecamp />
               </a>
             </li>
             <li>
-              <a href="#" className="social">
+              <a href="https://github.com/KravMaguy" className="social">
                 <FiGithub />
               </a>
             </li>

@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 import { FaCode } from "react-icons/fa";
 
 const People={
-    'header':'Is a team of software developers, digital marketers and designers',
-    'p': 'Hire us to build your web applications, devise your internet marketing plan, Manage your digital advertising, and craft custom buisness solutions using cutting edge technologies.'
+    'header':'Abe',
+    'p': 'Will write efficient and clean code, will not sleep until he squashes all your bugs'
 }
 const Abe={
     'header':'Abe',
-    'p':'Professional Software Development'
+    'p':'Professional Software Development since 2016'
 }
 const handleKeyPress=(e, callback)=>{
     if(e.key === 'Enter'){
@@ -33,7 +33,7 @@ const Header = (props) => (
         </div>
         <div className="content">
             <div className="inner">
-                <h1>Marketing, Design, Coding</h1>
+                <h1>Javascript, React.js, PHP</h1>
                 <h2>{!props.draw&&!props.isArticleVisible?People['header']:Abe['header']}</h2>
                 <p>{!props.draw&&!props.isArticleVisible?People['p']:Abe['p']}</p>
             </div>

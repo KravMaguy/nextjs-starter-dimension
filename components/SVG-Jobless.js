@@ -20,8 +20,8 @@ function Icon({isDrawing, draw}) {
       >
         <g
           transform="translate(0 180) scale(.1 -.1)"
-          fill="grey"
-          stroke="navy"
+          // fill="grey"
+          stroke="black"
           strokeWidth="3"
         >
           <path
