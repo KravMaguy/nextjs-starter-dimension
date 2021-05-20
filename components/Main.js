@@ -244,6 +244,45 @@ class Main extends React.Component {
             </dd>
           </dl>
 
+
+          <span className="image main">
+            <img
+              src="/static/images/acculynx.jpg"
+              alt="Screenshot of the acculynx integrated platform with the wordpress plugin"
+            />
+          </span>
+          <h2>
+            A wordpress customization for integrating acculynx CRM into a custom wordpress site
+          </h2>
+          <dl>
+            <dt>Tags</dt>
+            <dd>Coding</dd>
+            <dt>Technologies</dt>
+            <dd>PHP, Javascript, Wordpress, Plugin Development</dd>
+            <dt>Categories</dt>
+            <dd>
+              Back End Development, Full Stack
+              Development
+            </dd>
+            <dt>Repository</dt>
+            <dd>
+              <a
+                href="https://github.com/KravMaguy/acculynx-api-wpcf7"
+                target="_blank"
+              >
+                Acculynx Application Programming Interface Integration
+              </a>
+            </dd>
+
+            <dt>Buisness Solution</dt>
+            <dd>
+              <p>
+                A construction company wanted to integrate their acculynx crm with their custom wordpress website.
+              </p>
+            </dd>
+          </dl>
+
+
           <span className="image main">
             <img
               src="/static/images/multistep_form.jpg"
@@ -343,6 +382,8 @@ class Main extends React.Component {
               </ul>
             </dd>
           </dl>
+
+
 
           <span className="image main">
             <img

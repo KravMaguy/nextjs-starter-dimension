@@ -12,9 +12,7 @@ export default function Intro(props) {
       <h2 className="major">intro</h2>
 
       <p>
-        Hi! hire me to work for your company, I have experience in React.js, Firebase, Express, PHP, MySQL, as well as building custom sites and plugins in Wordpress and Elementor.
-        I will not rest until I squash all your software bugs, and fully optimize your codebase! I literally loose sleep at night when software is not working properly. In my freetime I enjoy thinking about ways to write more efficient algorithms, so you can definitely count on me to get the job done!
-        I have built large custom fullstack applications in React and Express as well as in PHP Mysql that implement Geolocation, IVR systems and SMS messaging, Progressive web apps, Payment integrations, and Workflow automations. I probably have more experience than your average bootcamp graduate or college undergraduate, so give me a chance to show you what I can do for your company!
+      Skilled programmer in Javascript, React.js, and PHP. I will not rest until all your bugs have been squashed, and your codebase is fully optimized. I have built custom fullstack applications and REST API's for the construction and real estate industry! In my freetime I enjoy thinking about ways to write more efficient algorithms, so you can definitely count on me to get the job done!
       </p>
       <p>Web and Application development:</p>
       <ul className="a">
@@ -42,9 +40,6 @@ export default function Intro(props) {
         <li>Portuguese</li>
         <li>Russian</li>
         <li>Persian</li>
-
-
-
 
       </ul>
 
